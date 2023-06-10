@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Chakra+Petch:wght@300&family=Farro:wght@300&family=Imprima&family=Jost:wght@300&family=Koulen&family=Montserrat:wght@100;400&family=Noto+Sans+Khmer:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@300&family=Quicksand:wght@300&family=Russo+One&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Chakra+Petch:wght@300&family=Dangrek&family=Farro:wght@300&family=Imprima&family=Jost:wght@300&family=Koulen&family=Montserrat:wght@100;400&family=Noto+Sans+Khmer:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@300&family=Quicksand:wght@300&family=Russo+One&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Chakra+Petch:wght@300&family=Dangrek&family=Farro:wght@300&family=Imprima&family=Jost:wght@300&family=Kantumruy+Pro&family=Koulen&family=Montserrat:wght@100;400&family=Noto+Sans+Khmer:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@300&family=Quicksand:wght@300&family=Russo+One&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Chakra+Petch:wght@300&family=Dangrek&family=Farro:wght@300&family=Imprima&family=Jost:wght@300&family=Kantumruy+Pro&family=Koulen&family=Montserrat:wght@100;400&family=Noto+Sans+Khmer:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@300&family=Quicksand:wght@300&family=Russo+One&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
+html{
+    overflow: hidden;
+}
+
+:root {
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    --gray: #e4e9ec;
+    --grey1: #f8f8f8;
+    --bg:#edf1f4;
+}
+
+#navbar_top {
+    background: rgb(23, 152, 194);
+    background: linear-gradient(27deg, rgba(23, 152, 194, 1) 0%, rgba(43, 197, 233, 1) 50%, rgba(68, 247, 185, 1) 100%);
+}
+
+#navbar_top .navbar-brand {
+    color: azure;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.right-column {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.flexbox {
+    display: flex;
+    width: 100%;
+}
+
+.left-panel {
+    position: sticky;
+    /* Set the element to become sticky  */
+    height: 100vh;
+    width: 30%;
+    background-color: var(--bg);
+    overflow: hidden;
+    /* Set the sticky positon top */
+}
+.right-panel{
+    width: 100%;
+    position: relative;
+    top: 64.4px;
+    height: auto;
+    background-color: white;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2),
+    inset -5px -5px 30px #dfdfdf;
+}
+
+.left-panel ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.left-panel ul li {
+    position: relative;
+    width: 100%;
+    top: 95px;
+    list-style: none;
+}
+
+.left-panel ul li:hover,
+.left-panel ul li.hovered {
+    background-color: rgb(23, 152, 194);
+
+
+}
+
+.left-panel ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: rgb(23, 152, 194);
+    left: 20px;
+}
+
+.left-panel ul li:hover a,
+.left-panel ul li.hovered a {
+    color: var(--gray);
+}
+
+.left-panel ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 10px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.left-panel ul li a .icon ion-icon {
+    font-size: 1.50em;
+
+}
+
+.left-panel ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.1em;
+    text-align: start;
+    white-space: nowrap;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+
+
+/* form */
+.form1 {
+    top: 100px;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(202, 239, 252);
+    padding-bottom: 40px;
+    
+}
+.head_text {
+    position: relative;
+    color: rgb(23, 152, 194);
+    top: -30px;
+    text-align: center;
+}
+.head_text span{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: 900;
+    font-size: 2.3em;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    padding: 0px 10px;
+}
+.head_text p{
+    font-family: 'Battambang', cursive;
+    font-weight: 600;
+}
+
+.form .text-on
+{
+    position: relative;
+    top:12px;
+    left: 10px;
+    background-color:white;
+    padding: 0px 5px;
+    color: rgb(23, 152, 194);
+    font-family: 'Kantumruy Pro', sans-serif;
+    
+}
+
+.form #date{
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #0082bc;
+    padding: 9px 10px;
+}
+.form .box{
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #0082bc;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(23, 152, 194);
+}
+.form .box:focus{
+    outline: 1px solid rgba(68, 247, 185, 1) ;
+    border: 1px solid transparent; 
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #0082bc;
+    padding: 10px 10px;
+    width: 100%;
+}
+select.box:not([size]):not([multiple]){
+    height: calc(2.2rem + 10px);
+}
+.form button{
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: white;
+}
+
+
